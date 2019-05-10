@@ -11,6 +11,7 @@ module.exports = {
 };
 
 function generateToken(user) {
+  console.log(jwtKey);
   const payload = {
     subject: user.id,
     username: user.username
